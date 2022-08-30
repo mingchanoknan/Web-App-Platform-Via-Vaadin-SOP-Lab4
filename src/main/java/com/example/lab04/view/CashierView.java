@@ -20,18 +20,25 @@ public class CashierView extends Div {
         Button cal = new Button("คำนวณเงินทอน");
 
         TextField b1000 = new TextField();
+        b1000.setReadOnly(true);
         b1000.setPrefixComponent(new Span("$1000: "));
         TextField b500 = new TextField();
+        b500.setReadOnly(true);
         b500.setPrefixComponent(new Span("$500:"));
         TextField b100 = new TextField();
+        b100.setReadOnly(true);
         b100.setPrefixComponent(new Span("$100: "));
         TextField b20 = new TextField();
+        b20.setReadOnly(true);
         b20.setPrefixComponent(new Span("$20: "));
         TextField b10 = new TextField();
+        b10.setReadOnly(true);
         b10.setPrefixComponent(new Span("$10: "));
         TextField b5 = new TextField();
+        b5.setReadOnly(true);
         b5.setPrefixComponent(new Span("$5: "));
         TextField b1 = new TextField();
+        b1.setReadOnly(true);
         b1.setPrefixComponent(new Span("$1: "));
 
         layout.add(change, cal, b1000, b500, b100, b20, b10, b5, b1);
